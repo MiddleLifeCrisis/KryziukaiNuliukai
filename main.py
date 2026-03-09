@@ -62,58 +62,53 @@ while True:
         print(f"Rezultatas: X - {x_laimejimai} | O - {o_laimejimai}")
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
     if grid[(0,2)] == "O" and grid[(1,2)] == "O" and grid[(2,2)] == "O":
         print(figlet_format("LAIMĖJO O"))
         o_laimejimai += 1
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
 #vidurines eilutes tikrinimas
     if grid[(0,1)] == "X" and grid[(1,1)] == "X" and grid[(2,1)] == "X":
         print(figlet_format("LAIMĖJO X"))
         x_laimejimai += 1
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
     if grid[(0,1)] == "O" and grid[(1,1)] == "O" and grid[(2,1)] == "O":
         print(figlet_format("LAIMĖJO O"))
         o_laimejimai += 1
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
 #vapatines eilutes tikrinimas
     if grid[(0,0)] == "X" and grid[(1,0)] == "X" and grid[(2,0)] == "X":
         print(figlet_format("LAIMĖJO X"))
         x_laimejimai += 1
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
     if grid[(0,0)] == "O" and grid[(1,0)] == "O" and grid[(2,0)] == "O":
         print(figlet_format("LAIMĖJO O"))
         break
@@ -123,124 +118,114 @@ while True:
         x_laimejimai += 1
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
     if grid[(0,2)] == "O" and grid[(0,1)] == "O" and grid[(0,0)] == "O":
         print(figlet_format("LAIMĖJO O"))
         o_laimejimai += 1
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
 #antro stulpelio tikrinimas
     if grid[(1,2)] == "X" and grid[(1,1)] == "X" and grid[(1,0)] == "X":
         print(figlet_format("LAIMĖJO X"))
         x_laimejimai += 1
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
     if grid[(1,2)] == "O" and grid[(1,1)] == "O" and grid[(1,0)] == "O":
         print(figlet_format("LAIMĖJO O"))
         o_laimejimai += 1
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
 #trecio stulpelio tikrinimas
     if grid[(2,2)] == "X" and grid[(2,1)] == "X" and grid[(2,0)] == "X":
         print(figlet_format("LAIMĖJO X"))
         x_laimejimai += 1
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
     if grid[(2,2)] == "O" and grid[(2,1)] == "O" and grid[(2,0)] == "O":
         print(figlet_format("LAIMĖJO O"))
         o_laimejimai += 1
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
 #pirmos istrizaines tikrinimas
     if grid[(0,2)] == "X" and grid[(1,1)] == "X" and grid[(2,0)] == "X":
         print(figlet_format("LAIMĖJO X"))
         x_laimejimai += 1
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
     if grid[(0,2)] == "O" and grid[(1,1)] == "O" and grid[(2,0)] == "O":
         print(figlet_format("LAIMĖJO O"))
         o_laimejimai += 1
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
 #antros istrizaines tikrinimas
     if grid[(0,0)] == "X" and grid[(1,1)] == "X" and grid[(2,2)] == "X":
         print(figlet_format("LAIMĖJO X"))
         x_laimejimai += 1
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
     if grid[(0,0)] == "O" and grid[(1,1)] == "O" and grid[(2,2)] == "O":
         print(figlet_format("LAIMĖJO O"))
         o_laimejimai += 1
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
+
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
 
         break
     if ejimai == 9:
         print(figlet_format("LYGIOSIOS"))
         testi = input("Ar žaisite dar kartą? (t/n): ")
         if testi.lower() == 't':
-            # Nunuliname viską naujam žaidimui
             grid = {(x, y): " " for x in range(3) for y in range(3)}
             ejimai = 0
-            continue  # Grįžtame į ciklo pradžią
+            continue  
         else:
-            break  # Išjungiame žaidimą
+            break  
