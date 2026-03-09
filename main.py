@@ -108,11 +108,20 @@ while True:
             ejimai = 0
             continue  
         else:
-            break  
+            break
+
     if grid[(0,0)] == "O" and grid[(1,0)] == "O" and grid[(2,0)] == "O":
         print(figlet_format("LAIMĖJO O"))
-        break
-#pirmo stulpelio tikrinimas
+        o_laimejimai += 1
+        testi = input("Ar žaisite dar kartą? (t/n): ")
+        if testi.lower() == 't':
+            grid = {(x, y): " " for x in range(3) for y in range(3)}
+            ejimai = 0
+            continue
+        else:
+            break
+
+        #pirmo stulpelio tikrinimas
     if grid[(0,2)] == "X" and grid[(0,1)] == "X" and grid[(0,0)] == "X":
         print(figlet_format("LAIMĖJO X"))
         x_laimejimai += 1
@@ -122,7 +131,8 @@ while True:
             ejimai = 0
             continue  
         else:
-            break  
+            break
+
     if grid[(0,2)] == "O" and grid[(0,1)] == "O" and grid[(0,0)] == "O":
         print(figlet_format("LAIMĖJO O"))
         o_laimejimai += 1
@@ -132,7 +142,8 @@ while True:
             ejimai = 0
             continue  
         else:
-            break  
+            break
+
 #antro stulpelio tikrinimas
     if grid[(1,2)] == "X" and grid[(1,1)] == "X" and grid[(1,0)] == "X":
         print(figlet_format("LAIMĖJO X"))
@@ -143,7 +154,8 @@ while True:
             ejimai = 0
             continue  
         else:
-            break  
+            break
+
     if grid[(1,2)] == "O" and grid[(1,1)] == "O" and grid[(1,0)] == "O":
         print(figlet_format("LAIMĖJO O"))
         o_laimejimai += 1
@@ -153,7 +165,8 @@ while True:
             ejimai = 0
             continue  
         else:
-            break  
+            break
+
 #trecio stulpelio tikrinimas
     if grid[(2,2)] == "X" and grid[(2,1)] == "X" and grid[(2,0)] == "X":
         print(figlet_format("LAIMĖJO X"))
@@ -164,7 +177,8 @@ while True:
             ejimai = 0
             continue  
         else:
-            break  
+            break
+
     if grid[(2,2)] == "O" and grid[(2,1)] == "O" and grid[(2,0)] == "O":
         print(figlet_format("LAIMĖJO O"))
         o_laimejimai += 1
@@ -174,7 +188,8 @@ while True:
             ejimai = 0
             continue  
         else:
-            break  
+            break
+
 #pirmos istrizaines tikrinimas
     if grid[(0,2)] == "X" and grid[(1,1)] == "X" and grid[(2,0)] == "X":
         print(figlet_format("LAIMĖJO X"))
@@ -185,7 +200,8 @@ while True:
             ejimai = 0
             continue  
         else:
-            break  
+            break
+
     if grid[(0,2)] == "O" and grid[(1,1)] == "O" and grid[(2,0)] == "O":
         print(figlet_format("LAIMĖJO O"))
         o_laimejimai += 1
@@ -195,7 +211,8 @@ while True:
             ejimai = 0
             continue  
         else:
-            break  
+            break
+
 #antros istrizaines tikrinimas
     if grid[(0,0)] == "X" and grid[(1,1)] == "X" and grid[(2,2)] == "X":
         print(figlet_format("LAIMĖJO X"))
@@ -206,7 +223,8 @@ while True:
             ejimai = 0
             continue  
         else:
-            break  
+            break
+
     if grid[(0,0)] == "O" and grid[(1,1)] == "O" and grid[(2,2)] == "O":
         print(figlet_format("LAIMĖJO O"))
         o_laimejimai += 1
@@ -217,9 +235,8 @@ while True:
             ejimai = 0
             continue  
         else:
-            break  
+            break
 
-        break
     if ejimai == 9:
         print(figlet_format("LYGIOSIOS"))
         testi = input("Ar žaisite dar kartą? (t/n): ")
